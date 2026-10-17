@@ -19,8 +19,8 @@ const classicMovies = movies.filter(m => m.year < 1999);
 
 // TODO 2: Use map() to transform the data.
 // Movies tranformed into string
-const movieDescript = movies.map(m => '${m.title} (${m.year} Rating: ${m.rating}');
-
+const movieDescript = movies.map(m => `${m.title} (${m.year}) Rating: ${m.rating}`
+);
 
 // TODO 3: Use reduce() to boil the data down to one value.
 
@@ -36,6 +36,16 @@ function getMovies(list, condition){
 console.log(getMovies(movies, m => m.year <2000));
 
 // TODO 5: Show at least three results with console.log() and show().
+
+console.log('Classic Movies: ', classicMovies);
+show('Classic Movies count: ' + classicMovies.length);
+
+console.log('Movie Description:', movieDescript);
+show('Second movie: '+ movieDescript[1]);
+
+
+console.log('Total Hours:', totalHours);
+show('Total running time: ' + totalHours + 'hours');
 
 
 // ----- helper (you do not need to change this) -----
