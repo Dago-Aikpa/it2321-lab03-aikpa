@@ -14,7 +14,7 @@ const movies = [
 ];
 
 // TODO 1: Use filter() to keep only some of the movies.
-// We filter classical movies according the year.
+// We filter classic movies according the year.
 const classicMovies = movies.filter(m => m.year < 1999);
 
 // TODO 2: Use map() to transform the data.
@@ -37,7 +37,7 @@ console.log(getMovies(movies, m => m.year <2000));
 
 // TODO 5: Show at least three results with console.log() and show().
 
-console.log('Classic Movies: ', classicMovies);
+console.log('The Classic Movies: ', classicMovies);
 show('Classic Movies count: ' + classicMovies.length);
 
 console.log('Movie Description:', movieDescript);
