@@ -29,12 +29,11 @@ const totalHours = movies.reduce((sum, m) => sum + m.minutes, 0) / 60;
 
 
 // TODO 4: Write your OWN higher-order function: one that takes a function
-//         as an argument. Example: a function that returns how many movies
-//         satisfy a test you pass in.
-// function countWhere(list, test) {
-//   return list.filter(test).length;
-// }
-// console.log(countWhere(movies, m => m.year < 2000));
+// A high order function that filter movies release before year 2000
+function getMovies(list, condition){
+  return list.filter(condition);
+}
+console.log(getMovies(movies, m => m.year <2000));
 
 // TODO 5: Show at least three results with console.log() and show().
 
