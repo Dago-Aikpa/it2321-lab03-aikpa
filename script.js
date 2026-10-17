@@ -18,9 +18,8 @@ const movies = [
 const classicMovies = movies.filter(m => m.year < 1999);
 
 // TODO 2: Use map() to transform the data.
-//         Example: an array of just the titles, or "Title (year)" strings.
-// const titles = movies.map(m => `${m.title} (${m.year})`);
-
+// Movies tranformed into string
+const movieDescript = movies.map(m => '${m.title} (${m.year} Rating: ${m.rating}');
 // TODO 3: Use reduce() to boil the data down to one value.
 //         Example: the total running time in minutes.
 // const totalMinutes = movies.reduce((sum, m) => sum + m.minutes, 0);
