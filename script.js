@@ -14,8 +14,8 @@ const movies = [
 ];
 
 // TODO 1: Use filter() to keep only some of the movies.
-//         Example: movies rated 4.3 or higher.
-// const topRated = movies.filter(m => m.rating >= 4.3);
+// We filter classical movies according the year.
+const classicMovies = movies.filter(m => m.year < 1999);
 
 // TODO 2: Use map() to transform the data.
 //         Example: an array of just the titles, or "Title (year)" strings.
